@@ -5,6 +5,7 @@ Version 0.0.0
 ### react-native-vector-icons directory
 
 Check out link below, it shows what icons are available in each icon library and how they look
+
 Link: https://oblador.github.io/react-native-vector-icons/
 
 ## Guide for Git Team collaboration
