@@ -1,0 +1,1 @@
+Screenshots that you want to display in a .md file can be placed here
