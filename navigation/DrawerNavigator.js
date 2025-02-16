@@ -7,6 +7,9 @@ import About from "../screens/About";
 import TabNavigator from "./TabNavigator";
 import { useState } from "react";
 
+// import components
+import { HoroscopeButtons } from "../screens/HoroscopeButtons";
+
 const Drawer = createDrawerNavigator();
 
 export default function DrawerNavigator() {
@@ -23,6 +26,15 @@ export default function DrawerNavigator() {
         options={{
           drawerIcon: ({ color, size }) => (
             <FontAwesome name="pied-piper-alt" size={size} color={color} />
+          ),
+        }}
+      ></Drawer.Screen>
+      <Drawer.Screen
+        name="Horoscope"
+        component={HoroscopeButtons}
+        options={{
+          drawerIcon: ({color, size}) => (
+            <FontAwesome name="star" size={size} color={color} />
           ),
         }}
       ></Drawer.Screen>

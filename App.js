@@ -5,6 +5,9 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import DrawerNavigator from "./navigation/DrawerNavigator";
 import { useState } from "react";
 
+// import components
+import { HoroscopePrediction } from "./screens/HoroscopePrediction";
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -15,6 +18,11 @@ export default function App() {
           name="Drawer Navigator"
           component={DrawerNavigator}
           options={{ headerShown: false }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Prediction"
+          component={HoroscopePrediction}
+          options={{ headerShown: true }}
         ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
