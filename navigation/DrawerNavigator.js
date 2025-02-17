@@ -29,15 +29,6 @@ export default function DrawerNavigator() {
           ),
         }}
       ></Drawer.Screen>
-      <Drawer.Screen
-        name="Horoscope"
-        component={HoroscopeButtons}
-        options={{
-          drawerIcon: ({color, size}) => (
-            <FontAwesome name="star" size={size} color={color} />
-          ),
-        }}
-      ></Drawer.Screen>
     </Drawer.Navigator>
   );
 }

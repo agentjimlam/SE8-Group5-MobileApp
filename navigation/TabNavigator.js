@@ -5,6 +5,9 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { useState } from "react";
 import HomeScreen from "../screens/HomeScreen";
 
+// import components
+import { HoroscopeButtons } from "../screens/HoroscopeButtons";
+
 const Tab = createBottomTabNavigator();
 
 function TabNavigator() {
@@ -26,6 +29,17 @@ function TabNavigator() {
             );
           },
         }}
+      ></Tab.Screen>
+      <Tab.Screen
+        name="Horoscope"
+        component={HoroscopeButtons}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({color, size}) => (
+            <FontAwesome name="star" size={size} color={color} />
+          ),
+        }}
+
       ></Tab.Screen>
     </Tab.Navigator>
   );
