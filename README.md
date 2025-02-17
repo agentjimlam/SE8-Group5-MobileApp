@@ -2,6 +2,11 @@
 
 Version 0.0.0
 
+## Horoscope API
+
+Horoscope API is obtained from [https://horoscope-app-api.vercel.app/](https://horoscope-app-api.vercel.app/). No API key required.
+
+
 ### react-native-vector-icons directory
 
 Check out link below, it shows what icons are available in each icon library and how they look

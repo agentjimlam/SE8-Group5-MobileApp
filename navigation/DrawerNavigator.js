@@ -7,6 +7,9 @@ import About from "../screens/About";
 import TabNavigator from "./TabNavigator";
 import { useState } from "react";
 
+// import components
+import { HoroscopeButtons } from "../screens/HoroscopeButtons";
+
 const Drawer = createDrawerNavigator();
 
 export default function DrawerNavigator() {
