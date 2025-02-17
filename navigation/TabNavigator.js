@@ -35,11 +35,10 @@ function TabNavigator() {
         component={HoroscopeButtons}
         options={{
           headerShown: false,
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <FontAwesome name="star" size={size} color={color} />
           ),
         }}
-
       ></Tab.Screen>
     </Tab.Navigator>
   );
