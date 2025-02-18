@@ -7,6 +7,8 @@ import HomeScreen from "../screens/HomeScreen";
 
 // import components
 import { HoroscopeButtons } from "../screens/HoroscopeButtons";
+// Import by Vincent
+import { TicTacToe } from "../screens/TicTacToe";
 
 const Tab = createBottomTabNavigator();
 
@@ -37,6 +39,17 @@ function TabNavigator() {
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <FontAwesome name="star" size={size} color={color} />
+          ),
+        }}
+      ></Tab.Screen>
+      {/* Vincent's Screen */}
+      <Tab.Screen
+        name="TicTacToe"
+        component={TicTacToe}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="gamepad" size={size} color={color}/>
           ),
         }}
       ></Tab.Screen>

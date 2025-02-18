@@ -7,6 +7,7 @@ import { useState } from "react";
 
 // import components
 import { HoroscopePrediction } from "./screens/HoroscopePrediction";
+import { TicTacToe } from "./screens/TicTacToe";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ export default function App() {
           name="Prediction"
           component={HoroscopePrediction}
           options={{ headerShown: true }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="TicTacToe"
+          component={TicTacToe}
+          options={{ headerShown: false }}
         ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
