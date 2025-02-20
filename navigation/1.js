@@ -3,15 +3,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { useState } from "react";
 import HomeScreen from "../screens/HomeScreen";
 import DeviceInfoScreen from "../screens/DeviceInfoScreen";
 import BatteryScreen from "../screens/BatteryScreen"; 
-
-// import components
 import { HoroscopeButtons } from "../screens/HoroscopeButtons";
-// Import by Vincent
-import { TicTacToe } from "../screens/TicTacToe";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -54,22 +49,11 @@ function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="TicTacToe"
-        component={TicTacToe}
-        options={{
-          headerShown: false,
-          tabBarIcon: ({ color, size }) => (
-            <FontAwesome name="gamepad" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
         name="Device"
-        component={DeviceStack}
+        component={DeviceStack} 
         options={{
-          headerShown: false,
           tabBarIcon: ({ color, size }) => (
-            <Feather name="smartphone" size={size} color={color} />
+            <Feather name="info" size={size} color={color} />
           ),
         }}
       />
