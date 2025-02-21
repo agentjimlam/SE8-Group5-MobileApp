@@ -6,7 +6,10 @@ export default function HomeScreen({ navigation, route }) {
 
   return (
     <View style={stylesDefault.container}>
-      <StatusBar style="light" backgroundColor="#61dafb" />
+      <StatusBar 
+        style="dark" 
+        // backgroundColor="#61dafb" 
+      />
       <Text>This is the Home Screen</Text>
       <TouchableOpacity
         style={stylesDefault.launchButton}

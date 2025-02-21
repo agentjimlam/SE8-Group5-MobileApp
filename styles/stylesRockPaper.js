@@ -18,7 +18,7 @@ export const stylesRPS = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#fff",
+    color: "#fff", // white color
     marginBottom: 40,
     textAlign: "center",
   },
@@ -30,18 +30,18 @@ export const stylesRPS = StyleSheet.create({
   },
   scoreBox: {
     alignItems: "center",
-    backgroundColor: "#16213e",
+    backgroundColor: "#16213e", // Very dark blue box #16213e
     padding: 20,
     borderRadius: 15,
     minWidth: 120,
   },
   scoreLabel: {
-    color: "#e94560",
+    color: "#e94560", // #e94560 bright red
     fontSize: 18,
     marginBottom: 5,
   },
   scoreValue: {
-    color: "#fff",
+    color: "#fff", // white color
     fontSize: 24,
     fontWeight: "bold",
   },
@@ -52,7 +52,7 @@ export const stylesRPS = StyleSheet.create({
     flexWrap: "wrap",
   },
   choiceButton: {
-    backgroundColor: "#16213e",
+    backgroundColor: "#16213e", // // #16213e Very dark blue
     padding: 20,
     borderRadius: 15,
     alignItems: "center",
@@ -64,7 +64,7 @@ export const stylesRPS = StyleSheet.create({
     marginBottom: 10,
   },
   choiceText: {
-    color: "#fff",
+    color: "#fff", // white
     fontSize: 16,
     textTransform: "capitalize",
   },
@@ -86,38 +86,38 @@ export const stylesRPS = StyleSheet.create({
     alignItems: "center",
   },
   vs: {
-    color: "#e94560",
+    color: "#e94560", // #e94560 bright red
     fontSize: 24,
     fontWeight: "bold",
     marginHorizontal: 20,
   },
   result: {
-    color: "#fff",
+    color: "#fff", // white color
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
   },
   playAgainButton: {
-    backgroundColor: "#e94560",
+    backgroundColor: "#e94560", // #e94560 bright red
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 25,
     marginBottom: 500,
   },
   playAgainText: {
-    color: "#fff",
+    color: "#fff", // white color
     fontSize: 18,
     fontWeight: "bold",
   },
   navigateButton: {
-    backgroundColor: "#e94560",
+    backgroundColor: "#e94560", // #e94560 bright red
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 25,
     marginBottom: 30,
   },
   navigateText: {
-    color: "#fff",
+    color: "#fff", // white color
     fontSize: 18,
     fontWeight: "bold",
   },

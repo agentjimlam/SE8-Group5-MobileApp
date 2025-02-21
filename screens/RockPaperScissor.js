@@ -37,6 +37,9 @@ export default function RockPaperScissor({ navigation }) {
   const [result, setResult] = useState(null);
   const [score, setScore] = useState({ player: 0, computer: 0 });
 
+  // useCallback() hook is used to skip re-rendering of components so as to optimize performance. See screens/notes.md for more info
+  // eg. skip unnecessary re-renders of child components, in this case <TouchableOpacity>
+  // The useCallback() below will cache the `play` function, returning the same `play` function every time the component re-renders, instead of recreating a new `play` function each time re-render
   const play = useCallback((choice) => {
     const computer = choices[Math.floor(Math.random() * 3)];
     setPlayerChoice(choice);
@@ -58,7 +61,9 @@ export default function RockPaperScissor({ navigation }) {
       }));
     }
   }, []);
+  // The empty dependency array [] means this function never changes after the first render.
 
+  // Reset handler function
   const reset = () => {
     setPlayerChoice(null);
     setComputerChoice(null);
@@ -68,7 +73,7 @@ export default function RockPaperScissor({ navigation }) {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={stylesRPS.container}>
-        <StatusBar style="dark" />
+        {/* <StatusBar style="dark" /> */}
         <ScrollView style={stylesRPS.containerScroll}>
           <Text style={stylesRPS.title}>Rock Paper Scissors</Text>
 
@@ -82,7 +87,7 @@ export default function RockPaperScissor({ navigation }) {
               <Text style={stylesRPS.scoreValue}>{score.computer}</Text>
             </View>
           </View>
-
+          {/* if "no playerChoice made" is true, it will show the 3 choices using Array.map() method, else if false playerChoice has been made, it will show player's and computer's choice */}
           {!playerChoice ? (
             <View style={stylesRPS.choicesContainer}>
               {choices.map((choice) => (
