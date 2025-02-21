@@ -1,11 +1,12 @@
 # SE8-Group5-MobileApp
 
-Version 0.3.0
+Version 0.4.0
 
 Summary
-- Horoscope Screens added
-- tic tac toe game added
-- battery info screens/components added
+- Horoscope screens added
+- Tic Tac Toe game added
+- Device info screens added
+- Rock Paper Scissors game added
 
 ## Dependencies to install
 Please install these dependencies in your expo react-native app first.
