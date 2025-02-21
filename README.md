@@ -31,9 +31,11 @@ npx expo install expo-device
 Horoscope API is obtained from [https://horoscope-app-api.vercel.app/](https://horoscope-app-api.vercel.app/). No API key required.
 
 
-### react-native-vector-icons directory
+## @expo/vector-icons And react-native-vector-icons directory
 
-Check out link below, it shows what icons are available in each icon library and how they look
+Check out link below, it shows what icons are available in each icon library and how they look.
+- Expo React Native app comes pre-installed with `@expo/vector-icons` dependency, which is just a wrapper around `react-native-vector-icons`, meaning contains all the icons that `react-native-vector-icons` has. 
+- So you do not need to manually do a `npm install react-native-vector-icons` unless you want to do advanced customization things via the `react-native-vector-icons` dependency.
 
 Link: https://oblador.github.io/react-native-vector-icons/
 
