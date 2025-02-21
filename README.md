@@ -1,6 +1,30 @@
 # SE8-Group5-MobileApp
 
-Version 0.0.0
+Version 0.3.0
+
+Summary
+- Horoscope Screens added
+- tic tac toe game added
+- battery info screens/components added
+
+## Dependencies to install
+Please install these dependencies in your expo react-native app first.
+
+```
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/drawer
+
+npx expo install @react-navigation/native
+npx expo install @react-navigation/stack
+npx expo install react-native-gesture-handler
+
+npm install react-native-reanimated
+npm install react-native-screens
+npm install react-native-safe-area-context
+
+npx expo install expo-battery
+npx expo install expo-device
+```
 
 ## Horoscope API
 
