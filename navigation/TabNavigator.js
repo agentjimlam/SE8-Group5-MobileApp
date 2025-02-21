@@ -13,6 +13,8 @@ import { HoroscopeButtons } from "../screens/HoroscopeButtons";
 // Import by Vincent
 import { TicTacToe } from "../screens/TicTacToe";
 
+import RockPaperScissor from "../screens/RockPaperScissor";
+
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -60,6 +62,16 @@ function TabNavigator() {
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <FontAwesome name="gamepad" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Scissors"
+        component={RockPaperScissor}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="hand-scissors-o" size={size} color={color} />
           ),
         }}
       />
